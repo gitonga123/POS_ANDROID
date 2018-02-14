@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image2"
+    tools:context="com.example.eatitapplication.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/cal"
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/textSlogn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:text="@string/slogan"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btnSignup"
+            fancy:fb_text="@string/signup"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_iconPosition="left"
+            fancy:fb_fontIconResource="@string/icon_signup"
+            fancy:fb_defaultColor="@color/btnSignup"
+            android:layout_height="50dp"/>
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btnSignin"
+            fancy:fb_text="@string/signin"
+            android:layout_weight="1"
+            fancy:fb_fontIconResource="@string/icon_user"
+            android:textColor="@android:color/white"
+            fancy:fb_defaultColor="@color/btnSignActive"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_iconPosition="left"
+            android:layout_width="0dp"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

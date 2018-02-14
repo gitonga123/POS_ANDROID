@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image2"
+    tools:context="com.example.eatitapplication.signin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/editPhone"
+        android:hint="@string/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/white"
+        android:text="0710594298"
+        android:textColor="@android:color/white"
+        android:inputType="phone"
+        app:met_baseColor="@android:color/white"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@android:color/white"
+        app:met_singleLineEllipsis="true"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/editPassword"
+        android:hint="@string/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/white"
+        android:text="1234"
+        android:textColor="@android:color/white"
+        android:inputType="textPassword"
+        app:met_baseColor="@android:color/white"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@android:color/white"
+        app:met_singleLineEllipsis="true"/>
+    </LinearLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btnSignIn"
+        app:fb_text="@string/signin"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="8dp"
+        app:fb_fontIconResource="@string/icon_user"
+        app:fb_defaultColor="@color/btnSignActive"
+        app:fb_focusColor="#9bd823"
+        app:fb_iconPosition="left"/>
+
+</RelativeLayout>
